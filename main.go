@@ -24,7 +24,7 @@ func main() {
 	}
 	// Потокобезопасная версия стадии конвейера, осуществляющая
 	// выполнения арифметического произведения данных на заданное
-	// число
+	// число    !!!
 	multiply := func(done <-chan int, input <-chan int, multiplier int) <-chan int {
 		multipliedStream := make(chan int)
 		go func() {
